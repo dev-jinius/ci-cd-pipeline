@@ -24,5 +24,5 @@ Using github actions, Docker, AWS for ci/cd pipeline
     6. 해당 feature branch를 삭제한다.
     7. develop branch에서 개발이 완료되면 main branch에 merge 한다. (merge --no-ff)
     8. 태그를 추가한다. (ex) 1.0.0
-    9. main branch를 remote에 push한다.
+    9. main branch와 1.0.0 태그를 remote에 push한다.
   ```
