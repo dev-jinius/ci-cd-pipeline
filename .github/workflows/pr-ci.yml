@@ -29,8 +29,8 @@ jobs:
           gradle-version: 8.5
       - name: Make execute
         run: chmod +x ./gradlew
-      - name: init with Gradle
-        uses: gradle/gradle-build-action@v2
+#      - name: init with Gradle
+#        uses: gradle/gradle-build-action@v2
       - run: gradle init
       - name: Build with Gradle
         run: ./gradlew build
