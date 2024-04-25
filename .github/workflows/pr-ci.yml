@@ -23,7 +23,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Make execute
-        run: chmod +x ./gradlew
+        run: chmod +x ./ecommerce/gradlew
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./ecommerce/gradlew build
