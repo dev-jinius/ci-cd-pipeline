@@ -13,7 +13,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./ecommerce
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 17
