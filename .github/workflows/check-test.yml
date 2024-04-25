@@ -20,5 +20,5 @@ jobs:
         run: chmod +x ./ecommerce/gradlew
       - name: init with Gradle
         uses: gradle/gradle-build-action@v2
-        run: gradle init
+      - run: gradle init
       - run: ./ecommerce/gradlew test
