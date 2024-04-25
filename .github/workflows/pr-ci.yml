@@ -21,9 +21,16 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: 8.5
       - name: Make execute
         run: chmod +x ./ecommerce/gradlew
+
+      - name: init with Gradle
+        uses: gradle/gradle-build-action@v2
+        run: gradle init
 
       - name: Build with Gradle
         run: ./ecommerce/gradlew build
