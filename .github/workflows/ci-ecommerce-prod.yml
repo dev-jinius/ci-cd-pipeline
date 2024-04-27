@@ -2,11 +2,7 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "develop" ]
-
-env:
-  REGISTRY: ecommerce-dev
-
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -50,7 +46,7 @@ jobs:
       - name: Build, tag, and push docker image to Amazon ECR
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          REPOSITORY: ecommerce-dev
+          REPOSITORY: ecommerce-prod
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
