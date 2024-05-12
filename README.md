@@ -1,7 +1,23 @@
 # ci-cd-pipeline
-Using github actions, Docker, AWS for ci/cd pipeline
 
-## Phase
+ Git branch 전략을 기반으로 Github Actions를 사용한 CI 구축 프로젝트.
+
+## Overview
+### 1. 배경
+- 이전의 프로젝트들에서 PR 없이 merge 된 develop branch에 많은 충돌과 롤백으로 힘든 경험으로 프로젝트에 맞는 GIt branch 전략의 필요성을 느꼈다. 
+- 협업 시 Git branch의 Event 시 지속적인 코드의 통합의 자동화가 개발 이외에 Git 관리에 들어가는 많은 시간을 줄여준다.
+
+### 2. 목적 
+- 개인, 소규모 프로젝트 또는 프로젝트 초기에 서버 없이 CI를 하기 위함.
+- 빌드, 배포 시 필요한 환경 변수를 보안에 안전하게 관리한다.
+- 앱 빌드와 테스트 빌드 workflow를 분리한다.
+
+### 3. 핵심 기능
+- Git flow
+- CI
+- Springboot Profile
+
+## Server Phase
 - dev
 - prod
 
